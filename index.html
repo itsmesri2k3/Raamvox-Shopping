@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAAM VOX</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav id="upper-box">
+        <div class="part-1">
+            <img src="assets/img/raamvox.png" height="30px">
+            <form class="search-bar">
+                <input type="text" placeholder="Search.." name="search" class="searchbox">
+                <button type="submit"  style="background-color: transparent; border: none; margin: 0;"><i class="fa fa-search"></i></button>
+              </form>
+            <nav>
+                <a><i class="fa-regular fa-heart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </div>
+        <div class="part-2">
+            <nav style="display: flex; justify-content: space-between; align-items: center;">
+            <img src="assets/img/raamvox.png" height="30px">
+            
+            <nav>
+                <a><i class="fa-regular fa-heart"></i></a>
+                <a><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+            </nav>
+            <div >
+                <form class="search-bar2">
+                    <input type="text" placeholder="Search.." name="search" class="searchbox2">
+                    <button type="submit"  style="background-color: transparent; border: none; margin: 0;"><i class="fa fa-search"></i></button>
+                  </form>
+            </div>
+        </div>
+        <div class="category">
+            <div class="option">
+                <a>Offers</a>
+                <a>Mens</a>
+                <a>Womens</a>
+                <a>Kids</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <div style="width: 100%; position: fixed; bottom: 0%; display: flex; justify-content: center; z-index: 100;" onclick="closefun()">
+        <div id="menu-btn">
+            <button id="home" onclick="part1()">Home</button>
+            <button id="about" onclick="part2()">About</button>
+            <button id="service" onclick="part3()">Service</button>
+            <button id="contact" onclick="part4()">Contact</button>
+        </div>
+    </div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>

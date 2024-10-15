@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    font-family: "Josefin Sans", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.3s ease-in;
+}
+#upper-box{
+    width: 100%; 
+    height: max-content; 
+    position: fixed; 
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    animation: loaddown 1.3s forwards;
+}
+@keyframes loaddown {
+    0% {
+        top: -200px; 
+    }
+    100% {
+        top: 0px;
+    }
+}
+.part-1{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    height: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.searchbox{
+    background-color: transparent; 
+    border: none; 
+    width: 500px; 
+    margin: 0; 
+    outline: none; 
+    font-size: medium;
+}
+.search-bar{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.category{
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+.option{
+    background-color: gainsboro;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 10px;
+}
+a{
+    margin: 5px;
+    padding: 5px;
+}
+button{
+    cursor: pointer;
+    font-size: medium;
+}
+#menu-btn {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    border-radius: 13px;
+    background-color: rgba(128, 128, 128, 0.263);                
+    /* #25252590 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    z-index: 10;
+    overflow: hidden;
+    animation: loadup 1.3s forwards; 
+}
+@keyframes loadup {
+    0% {
+        bottom: -60px; 
+    }
+    100% {
+        bottom: 2px;
+    }
+}
+#home, #about, #service, #contact{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    color: black;
+}
+.part-2{
+    background-color: gainsboro;
+    padding: 15px;
+    align-items: center;
+    height: max-content;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: none;
+}
+.searchbox2{
+    background-color: transparent; 
+    border: none; 
+    width: 90%; 
+    margin: 0; 
+    outline: none; 
+    font-size: medium;
+}
+.search-bar2{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+@media (max-width:900px){
+    .part-1{
+        display: none;
+    }
+    .part-2{
+        display: block;
+    }
+}
