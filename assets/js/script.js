@@ -1,13 +1,13 @@
 // b4 start
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".container");
+var signupbox = document.getElementById("signupbox");
+var loginbox = document.getElementById("loginbox");
 
-sign_up_btn.addEventListener("click", () => {
-  container.classList.add("sign-up-mode");
-});
-
-sign_in_btn.addEventListener("click", () => {
-  container.classList.remove("sign-up-mode");
-});
-// b4 end
+function signpart() {
+    signupbox.style.display = "none";
+    loginbox.style.display = "flex";
+  }
+function loginpart() {
+    signupbox.style.display = "flex";
+    loginbox.style.display = "none";
+  }
+// b4 end            
