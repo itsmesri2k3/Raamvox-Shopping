@@ -139,8 +139,8 @@ button{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    padding: 5px;
-    border-radius: 12px;
+    padding: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 @media (max-width:900px){
@@ -150,16 +150,10 @@ button{
     .part-2{
         display: block;
     }
-    a{
-    font-size: small;
-    }
     .menu-btn-lawer{
         position: relative;
         width: 400px;
         max-width: 400px;
         min-width: 200px;
-    }
-    .logo{
-        height: 20px !important;
     }
 }
