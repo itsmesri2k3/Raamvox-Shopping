@@ -29,7 +29,7 @@ body{
     padding: 15px;
     align-items: center;
     height: 30px;
-    margin: 10px;
+    margin: 15px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -61,6 +61,7 @@ body{
     padding: 5px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 2px;
 }
 a{
     text-decoration: none;
@@ -117,7 +118,7 @@ button{
     padding: 15px;
     align-items: center;
     height: max-content;
-    margin: 10px;
+    margin: 15px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     display: none;
@@ -159,4 +160,7 @@ button{
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
+}
+#upper-box {
+    transition: transform 0.3s ease-in-out;
 }
