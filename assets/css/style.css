@@ -61,7 +61,7 @@ body{
 }
 .option{
     background-color: #252525;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-top: 2px;
@@ -147,6 +147,13 @@ button{
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+.webcontent{
+    background-color: white; 
+    position: absolute; 
+    width: 100%; 
+    height: 1000px; 
+    padding-top: 130px;
+}
 @media (max-width:900px){
     .part-1{
         display: none;
@@ -160,6 +167,9 @@ button{
         max-width: 400px;
         min-width: 200px;
     }
+    .webcontent{
+    padding-top: 185px;
+    }
 }
 @media (max-width:420px){
     .menu-btn-lawer{
@@ -170,3 +180,4 @@ button{
 #upper-box {
     transition: transform 0.3s ease-in-out;
 }
+
