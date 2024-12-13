@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAAMVOX | WOMENS</title>
-    <link rel="stylesheet" href="assets/css/A3.css">
+    <title>RAAM VOX</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav id="upper-box">
         <div class="part-1">
-            <img src="assets/img/raamvox.png" height="30px">
+            <img src="assets/img/raamvox.png" class="logo">
             <form class="search-bar">
                 <input type="text" placeholder="Search.." name="search" class="searchbox">
                 <button type="submit"  style="background-color: transparent; border: none; margin: 0;"><i class="fa fa-search" style="color: white;"></i></button>
@@ -23,7 +23,7 @@
         </div>
         <div class="part-2">
             <nav style="display: flex; justify-content: space-between; align-items: center;">
-            <img src="assets/img/raamvox.png" height="30px">
+            <img src="assets/img/raamvox.png" class="logo">
             
             <nav>
                 <a href="C1.html" style="padding: 5px;"><i class="fa-regular fa-heart"></i></a>
@@ -39,23 +39,27 @@
         </div>
         <div class="category">
             <div class="option">
-                <a href="A1.html" class="top-btn">New Arrivals</a>
+                <a href="A1.html" class="top-btn">New</a>
                 <a href="A2.html" class="top-btn">Shirts</a>
                 <a href="A3.html" class="top-btn" style="color: gray;">Pants</a>
-                <a href="A4.html" class="top-btn">Perfumes</a>
+                <a href="A4.html" class="top-btn">Accessories</a>
             </div>
         </div>
         </nav>
     </header>
+    <nav class="webcontent">
+
+        
+    </nav>
     <div style="width: 100%; position: fixed; bottom: 0%; display: flex; justify-content: center; z-index: 100;" onclick="closefun()">
         <nav class="menu-btn-lawer">
-            <div id="menu-btn">
-                <button id="home" onclick="part1()"><a href="index.html">Home</a></button>
-                <button id="about" onclick="part2()"><a href="B2.html">Brands</a></button>
-                <button id="service" onclick="part3()"><a href="B3.html">Orders</a></button>
-                <button id="contact" onclick="part4()"><a href="B4.html">Settings</a></button>
-            </div>
-            </nav>
+        <div id="menu-btn">
+            <button id="home" onclick="part1()"><a href="index.html">Home</a></button>
+            <button id="about" onclick="part2()"><a href="B2.html">Brands</a></button>
+            <button id="service" onclick="part3()"><a href="B3.html">Orders</a></button>
+            <button id="contact" onclick="part4()"><a href="B4.html">Settings</a></button>
+        </div>
+       </nav>
     </div>
 </body>
 <script src="assets/js/script.js"></script>

@@ -5,9 +5,8 @@
 body{
     margin: 0;
     padding: 0;
-    transition: opacity 0.3s ease-in;
     -webkit-tap-highlight-color: transparent;
-    background-color: gainsboro;
+    background-color: #393939;
 }
 #upper-box{
     width: 100%; 
@@ -16,12 +15,13 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #393939;
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
-    padding-bottom: 15px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding-bottom: 10px;
+    z-index: 1000;
 }
-
+.logo{
+    height: 30px;
+}
 .part-1{
     background-color: #252525;
     display: flex;
@@ -29,9 +29,12 @@ body{
     padding: 15px;
     align-items: center;
     height: 30px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .searchbox{
     background-color: transparent; 
@@ -58,10 +61,10 @@ body{
 }
 .option{
     background-color: #252525;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
-    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 2px;
 }
 a{
     text-decoration: none;
@@ -84,8 +87,10 @@ button{
     /* #25252590 */
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
     height: 40px;
-    z-index: 10;
+    z-index: 1000;
     bottom: 2px;
     overflow: hidden;
 }
@@ -97,12 +102,12 @@ button{
     border-top-right-radius: 20px;
     background-color: #393939;                
     /* #25252590 */
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 10px;
     width: 300px;
-    height: 35px;
+    height: 42px;
     z-index: 10;
-    bottom: 0px;
+    bottom: -5px;
     overflow: hidden;
 }
 #home, #about, #service, #contact{
@@ -118,7 +123,10 @@ button{
     padding: 15px;
     align-items: center;
     height: max-content;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     display: none;
@@ -141,6 +149,13 @@ button{
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+.webcontent{
+    background-color: white; 
+    position: absolute; 
+    width: 100%; 
+    height: 1000px; 
+    padding-top: 130px;
+}
 @media (max-width:900px){
     .part-1{
         display: none;
@@ -154,4 +169,17 @@ button{
         max-width: 400px;
         min-width: 200px;
     }
+    .webcontent{
+    padding-top: 185px;
+    }
 }
+@media (max-width:420px){
+    .menu-btn-lawer{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
+#upper-box {
+    transition: transform 0.3s ease-in-out;
+}
+
