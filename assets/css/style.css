@@ -7,7 +7,7 @@ body{
     padding: 0;
     transition: opacity 0.3s ease-in;
     -webkit-tap-highlight-color: transparent;
-    background-color: gainsboro;
+    background-color: #393939;
 }
 #upper-box{
     width: 100%; 
