@@ -16,7 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #393939;
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding-bottom: 15px;
     z-index: 1000;
 }
@@ -32,7 +32,7 @@ body{
     height: 30px;
     margin: 10px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .searchbox{
     background-color: transparent; 
@@ -61,7 +61,7 @@ body{
     background-color: #252525;
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-top: 10px;
 }
 a{
@@ -98,7 +98,7 @@ button{
     border-top-right-radius: 20px;
     background-color: #393939;                
     /* #25252590 */
-    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 10px;
     width: 300px;
     height: 35px;
