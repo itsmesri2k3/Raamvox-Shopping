@@ -152,6 +152,9 @@ button{
     font-size: small;
     }
     .menu-btn-lawer{
-        width: 100%;
+        position: relative;
+        width: 400px;
+        max-width: 400px;
+        min-width: 200px;
     }
 }
