@@ -13,19 +13,18 @@ function loginpart() {
 // b4 end            
 let lastScrollTop = 0; // Tracks the last scroll position
 const upperBox = document.getElementById('upper-box'); // Select the top section
-const scrollThreshold = 5; // Minimum scroll distance before action triggers
+const scrollThreshold = 5; // Scroll threshold in pixels before hiding the navbar
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY; // Current scroll position
 
     if (window.innerWidth < 900) { // Only apply for screens below 900px
-        // Only trigger behavior if scroll distance exceeds threshold (5px)
-        if (Math.abs(currentScroll - lastScrollTop) > scrollThreshold) {
+        if (Math.abs(currentScroll - lastScrollTop) > scrollThreshold) { // Trigger action only after scrolling more than 5px
             if (currentScroll > lastScrollTop) {
-                // Scrolling down, hide half of the navbar (135px)
-                upperBox.style.transform = 'translateY(-135px)';
+                // Scrolling down, hide the navbar (translate it up by 50px)
+                upperBox.style.transform = 'translateY(-133px)';
             } else {
-                // Scrolling up, reset to original position
+                // Scrolling up, bring the navbar back into view
                 upperBox.style.transform = 'translateY(0)';
             }
         }
