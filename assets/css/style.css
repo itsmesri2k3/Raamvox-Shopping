@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
-    background-color: #363636;
+    background-color: #393939;
 }
 #upper-box{
     width: 100%; 
@@ -16,7 +16,7 @@ body{
     align-items: center;
     background-color: #393939;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     z-index: 1000;
 }
 .logo{
@@ -98,9 +98,9 @@ button{
     background-color: #393939;                
     /* #25252590 */
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    padding: 10px;
+    padding: 12px;
     width: 300px;
-    height: 40px;
+    height: 42px;
     z-index: 10;
     bottom: -5px;
     overflow: hidden;
